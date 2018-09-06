@@ -1,0 +1,16 @@
+1.mkdir XXX
+2.cd XXX
+3.git init
+4.在github上建立新仓库（可选择初始化README.md）
+5.git remote add origin 仓库网址（origin为该仓库的简单名字）
+6.添加新文件
+7.git add
+8.git commit -m""
+9.必须先执行7、8步，否则本地不会产生master分支
+git branch --set-upstream-to=origin/master（指定本地master分支和远程origin下master分支的连接）
+10.git pull --allow-unrelated-histories（弹窗esc+:wq+enter）（抓取远程仓库里本地没有的东西）
+11.git push origin master
+
+error/fatal:
+1.unable to access 'https://github.com/...'
+网络丢失，重新刷新github页面或重新登录
